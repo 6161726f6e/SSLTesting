@@ -1,7 +1,8 @@
 #!/bin/bash
-# reads in IP/hosts from addresses.txt.  Pulls the Subject field
-# from the certificate and writes to a file.  Useful for verifiying
-# hosts in Pen Test belong to the Org in scope
+# Author: Aaron Dhiman
+#  Read in IP/hosts from addresses.txt.  Pulls the Subject field
+#  from the certificate and write to a file.  Useful for verifiying
+#  hosts in Pen Test belong to the Org in scope
 touch verifyCerts.txt
 while read a; do
         echo $a >> verifyCerts.txt
